@@ -26,7 +26,8 @@ This project explores the relationship between financial news sentiment and stoc
 
 ```bash
 # Clone the repo
-git clone https://github.com/YOUR_USERNAME/Stock-Price-Prediction.git
+git clone https://github.com/Gemechu-G/Stock-Price-Prediction.git
+
 cd Stock-Price-Prediction
 
 # Create virtual environment
