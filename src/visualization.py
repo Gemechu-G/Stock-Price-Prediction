@@ -40,3 +40,12 @@ def plot_rating_impact(df, ticker='AAPL'):
     plt.tight_layout()
     plt.savefig(f'../figures/{ticker}_impact.png')
     return plt
+
+
+def plot_stock_indicators(df):
+    plt.figure(figsize=(14, 7))
+    plt.plot(df.index, df['Close'], label='Close Price')
+    plt.plot(df.index, df['SMA_20'], label='SMA 20')
+    plt.title('Stock Price with SMA')
+    plt.legend()
+    plt.show()
