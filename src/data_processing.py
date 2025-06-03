@@ -48,3 +48,9 @@ def load_merged_data():
     """Main function to get processed data"""
     ratings = load_ratings()
     return merge_with_prices(ratings)
+
+def load_stock_data(filepath):
+    df = pd.read_csv(filepath)
+    df['Date'] = pd.to_datetime(df['Date'])
+    df.set_index('Date', inplace=True)
+    return df
